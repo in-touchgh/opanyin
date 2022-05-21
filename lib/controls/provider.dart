@@ -39,11 +39,11 @@ class WeightProvider with ChangeNotifier {
     if (_id.isEmpty) {
       var newWeight =
       Weight(weight: getWeight, id: service.createId(), timestamp: getTimestamp);
-      service.saveProduct(newWeight);
+      service.saveWeight(newWeight);
     } else {
       var updatedWeight =
       Weight(weight: getWeight, timestamp: getTimestamp, id: _id);
-      service.updateProduct(updatedWeight);
+      service.updateWeight(updatedWeight);
     }
   }
 

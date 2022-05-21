@@ -69,7 +69,7 @@ class _EditOrAddWeightState extends State<EditOrAddWeight> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add or Edit Product'),
+        title: routeData!=null?Text('Edit Weight'):Text('Add Weight'),
       ),
       body: Center(
           child: Form(
